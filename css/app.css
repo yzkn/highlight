@@ -1,0 +1,12 @@
+/* Copyright (c) 2023 YA-androidapp(https://github.com/yzkn) All rights reserved. */
+
+div.code {
+    border: 1px solid rgba(0, 0, 0, .125);
+    min-height: 480px;
+    padding: 5px;
+    white-space: pre;
+}
+
+input[readonly] {
+    background-color: white !important;
+}
