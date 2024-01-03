@@ -14,7 +14,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
 
     <link href="css/app.css" rel="stylesheet">
 </head>
@@ -44,7 +45,11 @@
                     <div class="accordion-body">
                         <div class="row my-5">
                             <div class="col-4">
-                                <input type="file" class="form-control" name="highlightOpen" id="highlightOpen"
+                                <select class="form-select" id="highlightLanguageSelector"
+                                    name="highlightLanguageSelector">
+                                    <option value="autoDetect">Auto detect</option>
+                                </select>
+                                <input type="file" class="form-control my-2" name="highlightOpen" id="highlightOpen"
                                     name="highlightOpen" value="Open">
                             </div>
                             <div class="col-4">
@@ -62,8 +67,8 @@
                         </div>
                         <div class="row my-5">
                             <div class="col-4">
-                                <button type="button" class="btn btn-primary" id="highlightSave"
-                                    name="highlightSave">Save</button>
+                                <button type="button" class="btn btn-primary" id="highlightSave" name="highlightSave"
+                                    disabled>Save as HTML</button>
                             </div>
                             <div class="col-8">
                                 <div class='code' id="highlightCode" name="highlightCode" contenteditable="true"></div>

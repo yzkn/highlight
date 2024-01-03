@@ -2,11 +2,16 @@
 
 div.code {
     border: 1px solid rgba(0, 0, 0, .125);
+    font-family: "Source Code Pro", "Noto Sans JP", monospace !important;
     min-height: 480px;
     padding: 5px;
-    white-space: pre;
+    word-break: break-all;
 }
 
 input[readonly] {
     background-color: white !important;
+}
+
+#highlightValue {
+    display: none;
 }
